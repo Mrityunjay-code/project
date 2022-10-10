@@ -1,49 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>service</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/jq/jquery-3.6.1.js"></script>
 </head>
-<style>
-   .flex_container{
-      background-color: antiquewhite;
-      flex-direction: row;
-      display: flex;
-   }
-   .flex_container>div{
-      background-color: aliceblue;
-      margin: 10px;
-      padding: 20px;
-      font-size: 25px;
-   }
-   @media screen and (maxwidth:568px) {
 
-      .flex_container{
-     
-      flex-direction: column;
-      }
-    
-      
-       
-   }
-
-</style>
 <body>
-   <div class="flex_container">
-      <div>
-         <h1>about us</h1>
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At voluptatem, eius doloribus reiciendis mollitia illo saepe, assumenda nisi, minima accusantium natus beatae facilis repudiandae odit minus tempore nulla facere a.</p>
-         
-      </div>
-      <div> <h1>about us</h1>
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At voluptatem, eius doloribus reiciendis mollitia illo saepe, assumenda nisi, minima accusantium natus beatae facilis repudiandae odit minus tempore nulla facere a.</p>
-         </div>
-      <div> <h1>about us</h1>
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At voluptatem, eius doloribus reiciendis mollitia illo saepe, assumenda nisi, minima accusantium natus beatae facilis repudiandae odit minus tempore nulla facere a.</p>
-         </div>
-   </div>
-</div>
+    <button id="btn">service</button>
+    <ul id="para" style="margin:0;display:none;"> **/ using for show display absolute/** for hide the disply: none;
+
+  <li>home</li>
+  <li>about</li>
+  <li>content</li>
+  <li>help</li>
+  
+    </ul>
+    
+    <!-- <p id="para">Lorem ipsum dolor sit amet
+         consectetur adipisicing elit. Dicta eius ea, 
+         suscipit inventore fugit nemo accusantium, 
+         adipisci numquam laborum,
+          deserunt odit doloremque enim beatae repudiandae 
+        dolorum natus velit ipsam necessitatibus.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita recusandae a saepe ipsam molestiae, reiciendis, esse tempora quis temporibus optio omnis nisi alias in rem aliquam libero, eum ullam est?Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, deserunt! Officia vel est accusamus rem asperiores, id nesciunt libero totam? Asperiores optio ut doloremque dolore consectetur modi aspernatur eum totam Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur veniam dolor, nesciunt iste, nemo ex architecto sapiente ipsam natus autem dolores eos itaque, temporibus consectetur possimus! Veniam itaque sed consequatur!</p> -->
+    <script>
+    //    $(document).ready(()=>{
+    //     $("#btn").click(()=>{
+    //         $("#para").hide(1000,function(){
+    //             alert("hide completed")
+
+    //         });
+    //     });
+       
+    //     $("#btn2").click(()=>{
+    //         $("#para").show(1000,function(){
+    //             alert("show completed")
+    //           });
+
+    //         });
+    //    });
+    // $(document).ready(()=>{
+    //     $("#btn").click(()=>{
+    //         $("#para").fadeToggle(2000)
+    //     });
+    // });
+    $(document).ready(()=>{
+        $("#btn").click(()=>{
+            $("#para").slideDown(500)
+        });
+    });
+    </script>
 </body>
 </html>

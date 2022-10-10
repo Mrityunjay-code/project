@@ -1,40 +1,66 @@
- <!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>contact</title>
+	<title></title>
+	<script src="https://kit.fontawesome.com/b76ae19933.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="contc.css" />
+     <script type="module" src="./configureFirebase.js"></script>
+     <script type="module" src="./service.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/3/firebase.js"></script>
 </head>
-<link rel="stylesheet" href="/contc.css">
-<style>
-    
-</style>
 <body>
-    <div class="container">  
-        <form id="contact" action="" method="post">
-          <h3><center>Contact Us</center></h3><br>
-          
-          <fieldset>
-           Name: <input placeholder="Your name" type="text" tabindex="1" required autofocus>
-          </fieldset>
-          <fieldset>
-           Email: <input placeholder="Your Email Address" type="email" tabindex="2" required>
-          </fieldset>
-          <fieldset>
-           Mobile: <input placeholder="Your Phone Number" type="tel" tabindex="3" required>
-          </fieldset>
-          
-          <fieldset>
-           Msg: <textarea placeholder="Type your Message Here...." tabindex="5" required></textarea>
-          </fieldset>
-          <fieldset>
-            <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
-          </fieldset>
-        </form>
-       
-        
-      </div>
-   
+<header>
+	<div class="nav_above">
+		<div class="left">
+			<span><i class="fa-solid fa-phone-volume"></i> Call Us: +91-9135082891</span>
+			<span><i class="fa-solid fa-envelope-open"></i> Mail Us: kmrityunjay360@gmail.com</span>
+		</div>
+		<div class="right">
+			<i class="fa-brands fa-facebook"></i>
+			<i class="fa-brands fa-instagram"></i>
+			<i class="fa-brands fa-twitter"></i>
+		</div>
+	</div>
+	<nav class="navbar">
+		<div class="logo">
+			<a href="index.html"><img src="/img/logo.png" class="im"></a> 
+		</div>
+		<div class="menu">
+			<ul>
+				<li><a href="index.html">Home</a> </li>
+				<li><a href="about.html">About Us</a> </li>
+				<li><a href="contact.html"> Contact Us</a></li>
+				<li>Blog
+					<ul>
+						<li> <a href="#">Blog 1</a></li>
+						<li> <a href="#">Blog 2</a></li>
+						<li><a href="#">Blog 3</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</nav>
+</header>
+
+<section class="contact">
+	<div class="contact-section">
+		<h1>Contact Us</h1>
+		<hr width="150" color="white" size="4" class="hh" />
+		<h3> <i class="fa-solid fa-envelope"></i> Email: kmrityunjay360@gmail.com</h3>
+		<h3> <i class="fa-solid fa-phone-flip"></i> Call Us: +919135082891</h3>
+		<h3>Email: kmrityunjay360@gmail.com</h3>
+		<h3>Email: kmrityunjay360@gmail.com</h3>
+
+	</div>
+	<div class="contact-section">
+		<form>
+			<input type="text" name="" class="in" id="name"  placeholder="Your Name"/>
+			<input type="email" name="" class="in" id="email" placeholder="Your Email"/>
+			<input type="text" name="" class="in" id="phone" placeholder="Your Mobile" /><br/>
+			<button class="btn" id="btn">Contact Us</button>
+		</form>
+	</div>
+</section>
+<footer>Copyright &copy; 2022 || All Rights Reserved.</footer>
 </body>
-</html> 
+</html>
